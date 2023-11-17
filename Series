@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/*Series Program*/
+
+int main(void)
+{
+   float max = 0, a;
+
+   do {
+      printf("Enter a number:");
+         if(scanf("%f", &a) == 1) {
+            if(a > max){
+               max = a;
+         }
+      }
+   }
+   while(a > 0);
+
+      printf("The largest number entered was: %.1f\n", max);
+
+   return 0;
+}
