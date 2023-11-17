@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+class Name {
+  public:
+    std::string first;
+    std::string last;
+};
+
+int main() {
+  Name name;
+
+  std::cout << "\nEnter your first name: ";
+  std::cin >>name.first;
+  std::cout <<"\nEnter your last name: ";
+  std::cin >>name.last;
+  std::string result = name.first + " " + name.last;
+  std::cout << "Full name: " << result << std::endl;
+  std::cout << "Length of name: " << result.length() << std::endl;
+
+  return 0;
+}
